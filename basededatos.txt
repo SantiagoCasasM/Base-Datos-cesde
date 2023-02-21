@@ -1,0 +1,36 @@
+Universidad           Factultad		Personas	Decano	     Docente	Asignatura	Estudiantes
+- Facultades	      Asignaturas	Docente		Cedula       Cedula	Codigo		Nombres
+- Personas 	      			Decano		Nombre	     Nombre	Nombre		Apellidos
+					Estudiante	Apellido     Apellido	NCreditos	Direccion Resi
+							Celular	     Titulo			
+
+Facultad 1:1 Decano
+Facultad M:1 Docentes
+Docente M:M Asignaturas
+Estudiante M:M Asignaturas
+
+----------------------------------
+
+Cliente		Cliente			Articulo		Pedido			Fabrica
+- Articulos	Numero Cliente		Numero Articulo		Numero Cliente		N Fabrica
+- Pedidos	Direccion E		Fabricas Ali		Direccion E		Telefono Contac
+		Saldo			Stock			Fecha pedido		Info Fabrica
+		Limite Credito		Descripcion Art		N Articulo
+		Descuento					Cantidad
+
+
+Cliente M:M Articulo
+Cliente M:M Pedido
+Articulo M:M Fabrica
+Fabrica 1:M Pedido
+
+---------------------------------
+
+Empresa			Proveedores		Clientes		Productos		Ventas		Categorias
+- Proveedores		Nombre			Rut			CodigoP			CodigoV		CodigoC			
+- Clientes		Direccion		Nombre			Nombre			Fecha		Nombre
+- Productos		Telefono		Direccion		Precio			Cliente		Descripcion
+- Ventas		Pagina web		Telefono		Stock			Descuento
+			Rut			Direccion		Nombre Proveedor	Monto
+
+
